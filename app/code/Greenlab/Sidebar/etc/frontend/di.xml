@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+<type name="Magento\Checkout\Model\CompositeConfigProvider">
+<arguments>
+<argument name="configProviders" xsi:type="array">
+<item name="cms_block_config_provider"
+xsi:type="object">Greenlab\Sidebar\Model\CmsConfigProvider</item>
+</argument>
+</arguments>
+</type>
+<type name="Greenlab\Sidebar\Model\CmsConfigProvider">
+<arguments>
+<argument name="blockId" xsi:type="string">checkout-cms-block</argument>
+</arguments>
+</type>
+</config>
