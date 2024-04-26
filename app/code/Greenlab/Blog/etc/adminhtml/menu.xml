@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
-    <menu>
-        <add id="Greenlab_Blog::bf_blog" title="Blog" module="Greenlab_Blog" sortOrder="15" resource="Greenlab_Blog::bf_blog" parent="Magento_Backend::content"/>
-        <add id="Greenlab_Blog::bf_post" title="Posts" translate="title" module="Greenlab_Blog" sortOrder="30" parent="Greenlab_Blog::bf_blog" action="bf_blog/post" resource="Greenlab_Blog::post"/>
-    </menu>
-</config>
